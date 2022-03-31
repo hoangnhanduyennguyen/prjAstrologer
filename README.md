@@ -28,8 +28,8 @@ We need a Web browser and Visual Studio Code to run this website.
 
 * Maitri Hemangkumar Patel
 * Emie Radjouh
-* The Cam Phan
-* Hoang Nhan Duyen Nguyen
+* [The Cam Phan](https://github.com/phanthecam)
+* [Hoang Nhan Duyen Nguyen](https://github.com/hoangnhanduyennguyen)
 
 ## Acknowledgments
 
