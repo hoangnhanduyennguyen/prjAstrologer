@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Astrologer</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="static/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <!---**************************************header parts start*******************************************************-->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="header text-uppercase">
+          <a
+            class="navbar-brand font-weight-bold text-white logo"
+            href="#headid"
+            >Astrologer</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto text-uppercase">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#servicesid">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contactid">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ourteamid">Our Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#newsletterid">Subscribe</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="head-section" id="headid">
+      <img src="static/image/stars.png" id="stars" />
+      <img src="static/image/moon.png" id="moon" />
+      <h2 id="text">Astrologer</h2>
+      <img src="static/image/mountains_behind.png" id="mountains_behind" />
+      <img src="static/image/mountains_front.png" id="mountains_front" />
+    </section>
+    <!---**************************************header parts end*******************************************************-->
+
+    <!--*****************************************services start****************************************************-->
+    <section class="services" id="servicesid">
+      <div>
+        <h1 class="text-center font-weight-bold">SERVICES</h1>
+        <div class="container text-center">
+          <h4 class="text-center font-weight-bold">
+            Love and work are to people what
+          </h4>
+          <h4 class="text-center font-weight-bold">
+            water and sunshine are to plants
+          </h4>
+        </div>
+        <div class="container text-center d-flex justify-content-center">
+          <form id="inputForm">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-12">
+                <label for="firstName" class="form-label">First Name: </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  name="user-fname"
+                  placeholder="First Name"
+                  required
+                />
+                <div
+                  class="alert alert-danger"
+                  style="margin-top: 10px; font-size: small"
+                  id="alert-fname"
+                  role="alert"
+                >
+                  Please enter a valid name!
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-12">
+                <label for="lastName" class="form-label">Last Name: </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  name="user-lname"
+                  placeholder="Last Name"
+                  required
+                />
+                <div
+                  class="alert alert-danger"
+                  id="alert-lname"
+                  role="alert"
+                  style="margin-top: 10px; font-size: small"
+                >
+                  Please enter a valid name!
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-12">
+                <label for="dob" class="form-label">Date of birth: </label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="dob"
+                  name="user-dob"
+                  min="1900-01-01"
+                  max="2022-04-31"
+                  required
+                />
+                <div
+                  class="alert alert-danger"
+                  id="alert-dob"
+                  role="alert"
+                  style="margin-top: 10px; font-size: small"
+                >
+                  Please enter a valid date!
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div
+          class="container servicesBtn text-center d-flex justify-content-center"
+        >
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-7">
+              <div class="card text-center">
+                <div class="card-header">FACTS</div>
+                <div class="card-body">
+                  <button
+                    style="border: none"
+                    href="#detailsid"
+                    onclick="getFunFactsSection();"
+                  >
+                    <img
+                      src="static/image/fun-facts.png"
+                      class="img-fluid img-thumbnail"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-7">
+              <div class="card text-center">
+                <div class="card-header">ZODIAC SIGN</div>
+                <div class="card-body">
+                  <button
+                    style="border: none"
+                    href="#detailsid"
+                    onclick="getZodiacSection();"
+                  >
+                    <img
+                      src="static/image/zodiac.png"
+                      class="img-fluid img-thumbnail"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-7">
+              <div class="card text-center">
+                <div class="card-header">NUMEROLOGY</div>
+                <div class="card-body">
+                  <button
+                    style="border: none"
+                    href="#detailsid"
+                    onclick="getNumerologySection();"
+                  >
+                    <img
+                      src="static/image/numerology.png"
+                      class="img-fluid img-thumbnail"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--*****************************************our sevices end****************************************************-->
+
+    <!--*****************************************results start****************************************************-->
+    <section class="results-section" style="display: none" id="funfact-results">
+      <div class="container">
+        <h3>
+          <strong>Hey <span id="first_name"></span>,</strong>
+        </h3>
+        <p>
+          You were born on
+          <strong><span class="sh" id="date_of_birth"></span>.</strong>
+          <span id="generation">&nbsp;</span>
+          <br /><br />
+          You are <strong><span class="lh" id="year_old"></span></strong>
+          <span class="sh" id="year"></span>,
+          <strong><span class="lh" id="month_old"></span></strong>
+          <span class="sh" id="month"></span>,
+          <strong><span class="lh" id="day_old"></span></strong>
+          <span class="sh" id="day"></span> old until today. <br /><br />
+          Which also means that you have been alive for
+          <strong><span class="lh" id="day_on_earth"></span></strong>
+          <span class="sh" id="day_earth"></span>. <br />
+          Now let’s talk a bit about your birthday.<br /><br />
+          Did you know that <span class="sh" id="birthday_pre"></span
+          ><strong><span class="lh" id="birthday_next"></span></strong
+          ><strong><span class="sh" id="birthday_aft"></span></strong>
+          <br />
+          Your
+          <strong><span class="sh" id="birthday_next_repeat"></span></strong>
+          birthday will be on a
+          <strong><span class="sh" id="day_of_week_birthdate"></span></strong>
+          and the birthday after that will be on a
+          <strong
+            ><span class="sh" id="day_of_week_next_birthdate"></span>.</strong
+          >
+          <br /><br />
+          Do you know how many candles you’ve blown out so far?<br />
+          The total number of candles on all your birthday cakes so far is
+          <strong><span class="lh" id="number_of_candles"></span>.</strong
+          ><br />
+          Pretty cool right? <br /><br />
+          Let’s finish off with an important event that happened on your
+          birthdate.
+          <span class="sh" id="date_fact"></span>
+        </p>
+      </div>
+    </section>
+
+    <section class="results-section" style="display: none" id="zodiac-results">
+      <div class="container">
+        <p id="zodiac-output">&nbsp;</p>
+      </div>
+    </section>
+
+    <section
+      class="results-section"
+      style="display: none"
+      id="numerology-results"
+    >
+      <div class="container">
+        <p id="numerology-output">&nbsp;</p>
+      </div>
+    </section>
+    <!--*****************************************results end****************************************************-->
+
+    <!--**********************************contact us starts************************************************-->
+    <section class="contactus-section" id="contactid">
+      <div class="container headings text-center">
+        <h1 class="text-center font-weight-bold">CONTACT US</h1>
+        <p class="text-capitalize pt-1">
+          We Look Forward To Hearing From You 😊
+        </p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-8 col-md-8 col-10 offset-lg-2 offset-md-2 offset-1"
+          >
+            <form action="#">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="username"
+                  required
+                  autocomplete="off"
+                  placeholder="Enter Your Name"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  required
+                  autocomplete="off"
+                  placeholder="Enter Email"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="mobile"
+                  required
+                  autocomplete="off"
+                  placeholder="Enter Mobile Number"
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  rows="4"
+                  id="comment"
+                  placeholder="Enter Your Message"
+                ></textarea>
+              </div>
+              <div class="d-flex justify-content-center form-button">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--**********************************our contact us ends************************************************-->
+
+    <!--**********************************our team starts***********************************************-->
+    <section class="ourteam-section" id="ourteamid">
+      <div class="container text-center">
+        <h1 class="text-center font-weight-bold">OUR TEAM</h1>
+        <p class="pt-1">Our team includes</p>
+      </div>
+      <div id="demo" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <!-- The slideshow -->
+        <div class="carousel-inner container">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="box">
+                  <a href="#"
+                    ><img
+                      src="static/image/face-1.png"
+                      class="img-fluid img-thumbnail"
+                  /></a>
+                  <p class="m-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                  <h4>Maitri Patel</h4>
+                  <p>Web Developer</p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="box">
+                  <a href="#"
+                    ><img
+                      src="static/image/face-2.png"
+                      class="img-fluid img-thumbnail"
+                  /></a>
+                  <p class="m-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                  <h4>Hoang Nhan Duyen Nguyen</h4>
+                  <p>Web Developer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="box">
+                  <a href="#"
+                    ><img
+                      src="static/image/face-3.png"
+                      class="img-fluid img-thumbnail"
+                  /></a>
+                  <p class="m-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                  <h4>Emie Radjouh</h4>
+                  <p>Web Developer</p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="box">
+                  <a href="#"
+                    ><img
+                      src="static/image/face.jpg"
+                      class="img-fluid img-thumbnail"
+                  /></a>
+                  <p class="m-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                  <h4>The Cam Phan</h4>
+                  <p>Web Developer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </section>
+    <!--**********************************our team ends************************************************-->
+
+    <!--**********************************newsletter starts************************************************-->
+
+    <section class="sec newsletter" id="newsletterid">
+      <div class="container headings text-center">
+        <h1 class="text-center font-weight-bold">SUBSCRIBE TO NEWSLETTER</h1>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2 col-12">
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control news-input"
+                placeholder="Your Email"
+              />
+              <div class="input-group-append">
+                <span class="input-group-text">Subscribe</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--**********************************newsletter ends************************************************-->
+
+    <!--************************************footer strats************************************************-->
+    <footer class="footersection" id="footerid">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-12 footer-div">
+            <div>
+              <h3>ABOUT ASTROLOGER</h3>
+              <p>
+                Astrologer allows its users to find out about their zodiac,
+                their life path number as well as some facts based on their name
+                and birthdate. All you have to do is enter your name and
+                birthdate and learn more about yourself.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 footer-div text-center">
+            <div>
+              <h3>NAVIGATION LINKS</h3>
+              <li><a href="#headid">Home</a></li>
+              <li><a href="#servicesid">Services</a></li>
+              <li><a href="#contactid">Contact Us</a></li>
+              <li><a href="#ourteamid">Our Team</a></li>
+              <li><a href="#newsletterid">Subscribe</a></li>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 col-12 footer-div">
+            <div>
+              <h3>NEWSLETTER</h3>
+              <p>
+                For business professionals caught between high OEM price and
+                medicare print and graphic output
+              </p>
+              <div class="container newsletter-main">
+                <div class="row">
+                  <div class="col-lg-12 col-12">
+                    <div class="input-group mb-3">
+                      <input
+                        type="text"
+                        class="form-control news-input"
+                        placeholder="Your Email"
+                      />
+                      <div class="input-group-append">
+                        <span class="input-group-text">Subscribe</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-5 text-center">
+          <p>
+            Copyright ©2022 All rights reserved | This template is made with
+            love by Astrologer
+          </p>
+        </div>
+        <div class="scrolltop float-right">
+          <i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"></i>
+        </div>
+      </div>
+    </footer>
+    <!--*************************************footer ends**************************************************-->
+
+    <script>
+      let stars = document.getElementById("stars");
+      let moon = document.getElementById("moon");
+      let mountains_behind = document.getElementById("mountains_behind");
+      let mountains_front = document.getElementById("mountains_front");
+      let text = document.getElementById("text");
+      let header = document.querySelector("nav");
+
+      window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+        //move stars to the right
+        stars.style.left = value * 0.25 + "px";
+        moon.style.top = value * 0.9 + "px";
+        moon.style.right = value * 0.1 + "px";
+        mountains_behind.style.top = value * 0.5 + "px";
+        mountains_front.style.top = value * 0 + "px";
+        text.style.marginRight = value * 3 + "px";
+        text.style.marginTop = value * 0.5 + "px";
+        header.style.top = value * -0.5 + "px";
+      });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"
+      integrity="sha256-XJuslujM3cGzRZGiSi/KNSdk58uORO/mmrEQNjVtb5k="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+      integrity="sha256-JtQPj/3xub8oapVMaIijPNoM0DHoAtgh/gwFYuN5rik="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="static/js/main.js"></script>
+    <script src="static/js/CountUp.min.js"></script>
+    <script>
+      $(".counter").counterUp({
+        delay: 10,
+        time: 3000,
+      });
+      mybutton = document.getElementById("myBtn");
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      function topFunction() {
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+  </body>
+</html>
