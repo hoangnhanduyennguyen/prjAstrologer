@@ -20,6 +20,10 @@ We need a Web browser and Visual Studio Code to run this website.
 * Run the command ```go run main.go``` in a terminal
 * Open a web browser and go to the link ```localhost:8080```
 
+### How to use
+* Enter firstname, lastname and birthdate
+* Click on one of three buttons (Facts, Zodiac, Numerology) 
+
 ## Authors
 
 * Maitri Hemangkumar Patel
