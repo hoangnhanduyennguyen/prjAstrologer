@@ -28,8 +28,8 @@ We need a Web browser and Visual Studio Code to run this website.
 
 ## Authors
 
-* Maitri Hemangkumar Patel
-* Emie Radjouh
+* [Maitri Hemangkumar Patel](https://github.com/maitripatel1305)
+* [Emie Radjouh](https://github.com/emie-radjouh)
 * [The Cam Phan](https://github.com/phanthecam)
 * [Hoang Nhan Duyen Nguyen](https://github.com/hoangnhanduyennguyen)
 
