@@ -21,10 +21,10 @@ We need a Web browser and Visual Studio Code to run this website.
 * Open a web browser and go to the link ```localhost:8080```
 
 ### How to use
+![image](https://user-images.githubusercontent.com/62715325/161077792-10843352-27f5-4516-a1d8-2f4126884207.png)
 * Enter firstname, lastname and birthdate
 ![image](https://user-images.githubusercontent.com/62715325/161076182-f2f3eea1-8418-446e-af65-9e0213560f39.png)
-* Click on one of three buttons (Facts, Zodiac, Numerology) 
-![image](https://user-images.githubusercontent.com/62715325/161076454-1ccd9e3d-6c3e-4ec2-a189-eef87c13a0dc.png)
+* Click on one of three buttons (Facts, Zodiac, Numerology)
 
 ## Authors
 
