@@ -1,0 +1,460 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+/*   overflow-x: hidden; no horizontal ruler */
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: linear-gradient(#061c45, #068a9c);
+  color: #ffffff !important;
+}
+
+h1 {
+  font-size: 40px !important;
+  color: #fff !important;
+}
+
+p {
+  color: #fff !important;
+  font-size: 1.2rem;
+  line-height: auto;
+  font-weight: 400 !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+li {
+  list-style: none !important;
+}
+
+/* ---------------Header/Navigation----------------*/
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px !important;
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+
+nav .navbar {
+  flex-wrap: wrap;
+}
+
+.logo {
+  color: #fff !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  font-size: 2em !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2px !important;
+}
+
+.collapse ul {
+  display: flex !important;
+  justify-content: right !important;
+  align-items: center !important;
+}
+
+.collapse ul li {
+  list-style: none !important;
+  margin-left: 20px !important;
+}
+
+.collapse ul li a {
+  text-decoration: none !important;
+  padding-right: 6px 15px !important;
+  color: #fff !important;
+  border-radius: 20px !important;
+}
+
+.collapse ul li a:hover,
+.collapse ul li a.active {
+  background: #fff !important;
+  color: #061c45 !important;
+}
+
+#text {
+  position: absolute;
+  right: -700px;
+  color: #fff;
+  white-space: nowrap;
+  font-size: 6vw;
+  padding-top: 150px;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  z-index: 10;
+  font-weight: bold;
+}
+
+/* -----------End of Header/Navigation-------------*/
+
+/* ---------------Images Section----------------*/
+.head-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(#061c45, #068a9c);
+} /*   overflow: hidden; no vertical ruler */
+
+/* Border between hero and text section transparent*/
+.head-section::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(to top, #061c45, transparent);
+  z-index: 1000;
+}
+
+.head-section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.head-section img#moon {
+  mix-blend-mode: screen;
+}
+
+.head-section img#mountains_front {
+  z-index: 9;
+}
+
+/* ---------------Images Section End----------------*/
+
+/* ---------------Sevices Section Start----------------*/
+.services {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(#061c45, #068a9c);
+}
+
+.card {
+  transition: 0.4s ease;
+}
+
+.card-header {
+  font-size: 1.6rem;
+  font-weight: bold;
+  background: #fff !important;
+  padding: 10px 0 !important;
+  color: #161b4f;
+}
+
+.card-body {
+  padding: 10px !important;
+}
+
+.card-body li {
+  margin: 10px 0;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #606060;
+}
+
+.card:hover .card-footer a {
+  color: #fff;
+  background: #161b4f;
+  text-decoration: none;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card:hover .card-header,
+.card:hover .money {
+  color: #646569;
+}
+
+.card-second {
+  transform: translateY(-20px);
+}
+
+.servicesBtn {
+  margin-top: 30px;
+  max-width: 750px !important;
+}
+
+/* -----------End of Sevices Section-------------*/
+
+/* ---------------Results Section Start----------------*/
+.results-section {
+  position: relative;
+  background: #068a9c;
+  padding: 50px;
+  height: 100vh;
+  vertical-align: middle;
+}
+
+.results-section h2 {
+  font-size: 3.5em;
+  color: #fff;
+}
+
+.results-section p {
+  font-size: 1.2rem !important;
+  color: #fff;
+  text-align: justify;
+  line-height: 2.5rem !important;
+  margin: 0px;
+}
+
+.results-section .lh {
+  font-size: 4rem !important;
+}
+
+.results-section .sh {
+  font-size: 1.5rem !important;
+}
+
+.results-section .container {
+  max-width: 850px;
+}
+/* -----------End of results section-------------*/
+
+/*****************************************contact.us.starts******************************************/
+.contactus-section {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  position: relative;
+  background: #068a9c;
+}
+
+.contactus-section p {
+  color: #ffffff;
+}
+
+.contactus-section:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(330deg, #161b4f 55%, #fff 0%);
+  z-index: -1;
+}
+
+.form-button button {
+  border: 1px solid white;
+  border-radius: 100px;
+  margin: 0 5px;
+  padding: 12px 35px;
+  outline: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  background: transparent;
+}
+
+.form-button button:hover {
+  color: #161b4f;
+}
+
+form:hover .form-button button {
+  background: #fff;
+  color: #161b4f;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+::placeholder {
+  font-size: 0.85rem;
+}
+/*******************************************contact.us.end*******************************************/
+
+/**************************************our team start**************************************/
+.ourteam-section {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  background: linear-gradient(#068a9c, #061c45);
+}
+
+.box {
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+
+.box:hover {
+  background: #061c45;
+}
+
+.box:hover p {
+  color: white;
+}
+
+.box:hover h1 {
+  color: white;
+}
+
+.box:hover h2 {
+  color: white;
+}
+
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: -60px !important;
+}
+
+.carousel-indicators li {
+  background-color: #161b4f !important;
+}
+
+.box a {
+  position: relative;
+}
+
+.box a img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 20px;
+  border: none;
+}
+
+.box a:after {
+  content: "\f10d";
+  font-family: FontAwesome;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #068a9c;
+  color: white;
+  position: absolute;
+  top: 120%;
+  left: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box h1 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.box h2 {
+  font-size: 13px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.box p {
+  color: #fff;
+}
+
+/**************************************our team end**************************************/
+
+/*******************************************newsletter.start*******************************************/
+.newsletter {
+  padding-top: 50px;
+  width: 100%;
+  height: auto;
+  background: #061c45;
+}
+
+.news-input {
+  border-radius: 100px 0px 0px 100px !important;
+  min-width: 150px;
+  min-height: 45px;
+}
+
+.input-group-text {
+  color: #fff !important;
+  background: #161b4f !important;
+  border-radius: 0 100px 100px 0 !important;
+  min-width: 130px;
+  min-height: 45px;
+}
+/*******************************************newsletter.end*******************************************/
+
+/*******************************************footer.start*******************************************/
+
+.footersection {
+  width: 100%;
+  height: auto;
+  padding: 70px 0 20px 0;
+  background: #061c45;
+  position: relative;
+}
+
+.footersection p {
+  color: #fff;
+  font-size: 1rem !important;
+}
+
+.footersection li a {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.footersection h3 {
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 1.2rem !important;
+  font-weight: 600;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+#myBtn {
+  /*display: none;*/
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  z-index: 99;
+  border: none;
+  color: #fff;
+  background: #161b4f;
+  padding: 10px;
+  border-radius: 10px;
+}
