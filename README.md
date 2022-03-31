@@ -22,7 +22,9 @@ We need a Web browser and Visual Studio Code to run this website.
 
 ### How to use
 * Enter firstname, lastname and birthdate
+![image](https://user-images.githubusercontent.com/62715325/161076182-f2f3eea1-8418-446e-af65-9e0213560f39.png)
 * Click on one of three buttons (Facts, Zodiac, Numerology) 
+![image](https://user-images.githubusercontent.com/62715325/161076454-1ccd9e3d-6c3e-4ec2-a189-eef87c13a0dc.png)
 
 ## Authors
 
